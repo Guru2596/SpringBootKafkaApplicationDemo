@@ -16,6 +16,6 @@ public class RestControllerKafka {
     @GetMapping("/producerMsg")
     public String sendMessage(@RequestParam("message") String message){
         producer.sendMsgToTopic(message);
-        return "Message sent Successfully to the your code decode topic ";
+        return "Message sent Successfully to the your Vaccination Slot Information topic";
     }
 }
